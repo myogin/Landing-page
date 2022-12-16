@@ -5,11 +5,18 @@
 
 @layer base {
   html {
-    @apply font-roboto-font text-[16px] text-text-primary;
+    @apply font-roboto-font text-[16px] text-text-primary bg-bg-primary;
   }
 }
+
+@layer components{
+    .header-scrolled{
+      @apply bg-bg-secondary !py-[15px] shadow-sm
+    }
+}
+
 @layer utilities {
   .smooth {
-    @apply transition-all duration-700 ease-out;
+    @apply transition-all duration-500 ease-out;
   }
 }
